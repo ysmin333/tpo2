@@ -52,6 +52,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 10vh;
+  transition-property: font-size;
+  transition-duration: 3s;
+}
+
+#myheader:hover{
+  font-size: 12vh;
 }
 
 .flex-container {
@@ -70,8 +76,8 @@ body {
   text-align: justify;
   
   box-sizing: border-box;
-
 }
+
 
 footer {
   background-color: #556F44;
