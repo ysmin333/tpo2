@@ -60,6 +60,11 @@ body {
   font-size: 12vh;
 }
 
+/*.container:hover #myheader {
+  background-color: #04241e;
+  /*transition: background-color 3s;
+  clip-path: circle(150% at top left);
+}*/
 .flex-container {
   
   display: flex;
