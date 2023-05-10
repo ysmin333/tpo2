@@ -52,22 +52,29 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 10vh;
-  clip-path: circle(0% at center left);
-  transition-property: clip-path;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  
+  transition-property: font-size;
+  transition-duration: 3s;
 }
 
-.container:hover #myheader {
-  background-color: #04241e;
-  /*transition: background-color 3s;*/
-  clip-path: circle(150% at top left);
+#myheader:hover {
+  font-size: 12vh;
 }
+
+/*.container:hover #myheader {
+  background-color: #04241e;
+  /*transition: background-color 3s;
+  clip-path: circle(150% at top left);
+}*/
 .flex-container {
-  
+
   display: flex;
-  
+
+}
+
+.imagen {
+  float: left;
+  width: 128px;
+  padding: 15px;
 }
 
 .comida {
@@ -78,26 +85,27 @@ body {
   margin: 15px 5px;
   padding: 10px;
   text-align: justify;
-  
-  box-sizing: border-box;
 
+  box-sizing: border-box;
 }
+
 
 footer {
   background-color: #556F44;
   border-style: solid;
   border-color: #556F44;
   margin: 10px;
-  
+
 
 }
+
 @media only screen and (max-width: 600px) {
   .flex-container {
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -108,7 +116,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-   }
 
+  }
+
+ 
 }
