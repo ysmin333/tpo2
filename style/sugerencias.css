@@ -1,4 +1,18 @@
-#linkMail {
-    color: white;
-    opacity: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba (0,0,0,0.1);
+    padding: 50px;
 }
