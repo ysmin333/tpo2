@@ -6,17 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        crossorigin="anonymous"">
-    <link rel=" stylesheet" href="style/sugerencias.css">
-    <link rel="stylesheet" href="">
+    <script src="sugerencias.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="contenido">
-            <div class="logo">
-                <img id="bowl" src="img/fondoDos.jpg" alt="Ilustración de un bowl con verduras" />
+    <section class="contacto">
+        <div class="u-wrapper">
+            <div class="contact-content">
+                <form id="form" action="" class="form">
+                    <h3 class="tag"><span> SUGERENCIAS </span></h3>
+                    <label for="name"> Nombre Completo </label>
+                    <input name="name" required type="text" id="name">
+                    <label for="email"> Correo electronico </label>
+                    <input name="email" type="text" id="email" required>
+                    <label for="message"> SUGERENCIAS & COMENTARIOS: </label>
+                    <!--<input name="message" type="text" id="message">-->
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn primary full"> ENVIAR </button>
+                </form>
+                <a href="mailto:acyasmin1@gmail.com" id="linkMail"> Mail </a>
             </div>
             <div class="image"></div>
 
@@ -80,10 +88,8 @@
                 Registrate
             </div>
 
-            <div class="btn-2">
-                <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" />
-                Registrate
-            </div>
+    </section>
+    <footer>
 
             
         </div>
@@ -91,6 +97,5 @@
 
     </div>
 </body>
-<script src="js/sugerencias.js"></script>
 
 </html>
