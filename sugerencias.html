@@ -6,20 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/sugerencias.css">
-<style>
-    body{font-family: Arial, Helvetica, sans-serif;}
-    form{
-        background-color: aquamarine;
-        border-radius: 10px;
-        color: #999;
-        padding: 10px;
-        margin: 0 auto;
-        width: 300px;
-    }
-</style>
-
     <script src="sugerencias.js"></script>
+    <link rel="stylesheet" href="style/sugerencias.css">
 </head>
 
 <body>
@@ -30,39 +18,86 @@
                     <h3 class="tag"><span> SUGERENCIAS </span></h3>
                     <label for="name"> Nombre Completo </label>
                     <input name="name" required type="text" id="name">
-                    <br>
-                    <label for="email"> 
-                        Correo electrónico </label>
+                    <label for="email"> Correo electronico </label>
                     <input name="email" type="text" id="email" required>
-                    <br>
-                    <label for="message"> 
-                    SUGERENCIAS & COMENTARIOS: </label>
+                    <label for="message"> SUGERENCIAS & COMENTARIOS: </label>
                     <!--<input name="message" type="text" id="message">-->
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button type="submit" class="btn primary full"> ENVIAR </button>
+                    <button type="submit" id="boton"> ENVIAR </button>
                 </form>
                 <a href="mailto:acyasmin1@gmail.com" id="linkMail"> Mail </a>
             </div>
-        </div>
+            <div class="image"></div>
 
-</div>
+
+
+        <div class="texto">
+            Suscríbete <br />
+            y recibe las mejores novedades
+        </div>
+    </div>
+    <form id="formulario">
+        <div class="titulo"> ¡Bienvenidos! </div>
+
+        <div>
+            <label for="nombreDeUsuario"> Nombre </label>
+            <i class="far fa-user"></i>
+            <input type="text" name="username" id="Nombre-de-Usuario" placeholder="Pedro Pérez">
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+
+            <div class="error"></div>
+        </div>
+        <div>
+            <label for=correoElectronico"> Email </label>
+            <i class="far fa-envelope"></i>
+            <input type="email" name="email" id="correo-electronico" placeholder="pedro@perez.com">
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+
+            <div class="error"></div>
+
+        </div>
+        <div>
+            <label for="password">Sugerencias y Comentarios</label>
+            <i class="fas fa-comment"></i>
+
+            <input type="password" name="password" id="contrasena" placeholder="Hola Recetario" />
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+
+            <div class="error"></div>
+
+        </div>
+        <button id="btn" type="submit"> Enviar</button>
+
+        <div class="social">
+
+            <div class="titulo">Suscribete y recibe las novedades</div>
+
+            <div class="pregunta">
+                Ya estás registrado? <br />
+                <span>Ingresar</span>
+            </div>
+
+            <div class="btn"></div>
+            <div class="btn-1">
+                <img src="https://img.icons8.com/color/30/000000/google-logo.png" />
+                Registrate
+            </div>
+
     </section>
     <footer>
-        <script>
-            const $form = document.querySelector('#form')
-            const $buttonMailto = document.querySelector('#linkMail')
-            $form.addEventListener('submit', handleSubmit)
-            function handleSubmit(event) {
-                event.preventDefault()
-                const form = new FormData(this)
-                console.log(form.get('name'))
-                $buttonMailto.setAttribute('href', `mailto:acyasmin1@gmail.com?subject${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-                $buttonMailto.click()
 
+            
+        </div>
+    </form>
 
-            }
-        </script>
-    </footer>
+    </div>
+ <script src="js/sugerencias.js"></script>
 </body>
 
 </html>

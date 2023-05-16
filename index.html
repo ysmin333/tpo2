@@ -11,40 +11,63 @@
     <title>Recetario</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/recetario.png" type="images">
-
+    
 
 </head>
 
 <body>
-    <header>
-        <img src="img/comida.jpg" alt="Un plato de arroz con vegetales" width="300px" height="200px" class="center">
-        <!--logo o imagen -->
-        <div class="topnav"><!--Aca va LISTA/ barra de navegacion-->
+    <header id="topnav">
+        <!--<img src="img/comida.jpg" alt="Un plato de arroz con vegetales" width="300px" height="200px" class="center">
+        -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><a href="index.html"> Recetario</a>
+                    <ul>
+                        <li><a href="veggie.html" target="_blank">Recetas vegetarianas</a></li>
+                        <li><a href="snacks.html" target="_blank">Snacks</a></li>
+                        <li><a href="dulces.html" target="_blank"> Dulces</a></li>
+                        <li><a href="sugerencias.html" target="_blank">Únete al club Recetario</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="showcase" class="bk-showcase">
+            <div class="container">
+                <div class="showcase-content txt-center">
+                    <h1 id="myheader"> RECETARIO <br> RECETAS & MÁS </h1>
+                    <p class="txt-large"> Bienvenidos </p>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="topnav">
             <a class="active" href="#inicio">Inicio</a>
             <a href="veggie.html" target="_blank">Recetas vegetarianas</a>
             <a href="snacks.html" target="_blank">Snacks</a>
             <a href="dulces.html" target="_blank"> Dulces</a>
             <a href="sugerencias.html" target="_blank">Sugerencias</a>
-        </div>
+        </div> -->
 
 
     </header>
 
     </div>
     <main>
-        <div class="container">
+        <!--<div class="container">
             <h1  id="myheader"> RECETAS & MÁS </h1>
 
-        </div>
+        </div>-->
         <section class="flex-container">
             <div class="comida">
                 <section>
                     <article>
-                        <img src="" alt="">
+                        <img class="imagen" src="img/snack.jpg" alt="Una mesa con diferentes ingredientes saludables">
                         <h2 class="heading">
                             <a href="snacks.html" target="_blank"> Snacks</a>
                         </h2>
-                        <p> En esta sección encontratrás recetas de snacks fáciles y saludables, ideales para tus desayunos y meriendas, con opciones vegetarianas y veganas. Incluye videos explicativos paso a paso de cada receta.</p>
+                        <p> En esta sección encontratrás recetas de snacks fáciles y saludables, ideales para tus
+                            desayunos y meriendas, con opciones vegetarianas y veganas. Incluye videos explicativos paso
+                            a paso de cada receta.</p>
 
                     </article>
                 </section>
@@ -52,11 +75,13 @@
             <div class="comida">
                 <section>
                     <article>
-                        <img src="" alt="">
+                        <img class="imagen" src="img/salteado.jpg" alt="Un salteado de vegetales de muchos colores">
                         <h2 class="heading">
                             <a href="veggie.html" target="_blank"> Recetas vegetarianas </a>
                         </h2>
-                        <p> En esta sección encontratrás ideas de recetas vegetarianas y veganas para tus almuerzos o cenas, con variedad de opciones para todos los gustos. Incluye videos explicativos paso a paso de cada receta.</p>
+                        <p> En esta sección encontratrás ideas de recetas vegetarianas y veganas para tus almuerzos o
+                            cenas, con variedad de opciones para todos los gustos. Incluye videos explicativos paso a
+                            paso de cada receta.</p>
 
                     </article>
                 </section>
@@ -64,11 +89,15 @@
             <div class="comida">
                 <section>
                     <article>
-                        <img src="" alt="">
+                        <img class="imagen" src="img/torta.jpg"
+                            alt="Una torta de chocolate con un decorado de chocolate">
                         <h2 class="heading">
                             <a href="dulces.html" target="_blank"> Dulces </a>
                         </h2>
-                        <p> En esta sección encontratrás recetas dulces para que puedas hacer los mejores postres, chocotorta, lemon pie y cheesecake, los favoritos de todos. Incluye videos explicativos paso a paso de cada receta. </p>
+                        <p> ¿A quién no le gustan los dulces? Pues sabemos que son la debilidad de todos. Seleccionamos
+                            los postres clásicos que todos aman. </p>
+                        <p> Para empezar, te traemos una propuesta que sabemos nadie va a poder resistirse: ¡la amada
+                            chocotorta!</p>
                     </article>
                 </section>
             </div>
@@ -84,14 +113,16 @@
                 </section>
             </div>
         </section>
-        <aside>
-            <p> Esto es un aside</p>
-        </aside>
+
     </main>
     <footer>
-        <p> Datos de contacto -
+        <p> Encontranos en redes sociales <br>
 
-            Mandanos un WhatsApp 
+            WhatsApp <br>
+            Instagram <br>
+            YouTube <br>
+            Facebook
+
         </p>
         <!-- Ver como agregar el icono 
         <i class="fa-brands fa-whatsapp"></i>-->
