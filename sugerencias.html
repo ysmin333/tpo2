@@ -1,117 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Únete al club</title>
-    <script src="sugerencias.js"></script>
-    <link rel="stylesheet" href="style/sugerencias.css">
-    <link rel="shortcut icon" href="img/recetario.png" type="images">
+    <link rel="stylesheet" href="style/sugerencias.css" />
+    <link rel="shortcut icon" href="img/recetario.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/5b55db70fb.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif; background-image: url(img/fondo\ cook.jpg); box-sizing: border-box;
-        }
-        form{
-            background-color: beige;
-            color: black;
-            padding: 10px;
-            margin: 0 auto;
-            width: 300px;
-        }
-        input, textarea{
-            border: 0;
-            outline: none;
-        }
-        .field{
-        border:solid 1 px #ccc;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(img/fondo\ cook.jpg);
+        box-sizing: border-box;
+      }
+
+      form {
+        background-color: beige;
+        color: black;
+        padding: 10px;
+        margin: 0 auto;
+        width: 300px;
+      }
+
+      input,
+      textarea {
+        border: 0;
+        outline: none;
+      }
+
+      .field {
+        border: solid 1px #ccc;
         padding: 10px;
         width: 280px;
-        }
-        .field:focus{
-border-color: darkcyan;
-        }
-        .center-content{
-text-align: center;
-        }
+      }
 
+      .field:focus {
+        border-color: darkcyan;
+      }
+
+      .center-content {
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="topnav">
-            <a class="active" href="index.html">Recetario</a>
-            <a href="veggie.html" target="_blank">Recetas vegetarianas</a>
-            <a href="snacks.html" target="_blank">Snacks</a>
-            <a href="dulces.html" target="_blank"> Dulces</a>
-            <a href="sugerencias.html" target="_blank">Únete al club</a>
-        </div>
+      <div class="topnav">
+        <a class="active" href="index.html">Recetario</a>
+        <a href="veggie.html" target="_blank">Recetas vegetarianas</a>
+        <a href="snacks.html" target="_blank">Snacks</a>
+        <a href="dulces.html" target="_blank"> Dulces</a>
+        <a href="carnes.html" target="_blank"> Carnes</a>
+        <a href="sugerencias.html" target="_blank">Únete al club Recetario</a>
+      </div>
     </header>
-    
-    <form id="formulario">
-        <div class="titulo"> ¡Bienvenidos! </div>
 
-        <div>
-            <label for="nombreDeUsuario"> Nombre </label>
-            <i class="far fa-user"></i>
-            <input type="text" name="username" id="Nombre-de-Usuario" placeholder="Pedro Pérez">
+    <form action="" method="POST" id="form">
+      <div class="titulo">¡Bienvenidos!</div>
 
-            <i class="fas fa-exclamation-circle failure-icon"></i>
-            <i class="far fa-check-circle success-icon"></i>
+      <div>
+        <label for="nombreDeUsuario">Nombre</label>
+        <i class="fas fa-circle-user"></i>
+        <input
+          type="text"
+          name="username"
+          id="Nombre-de-Usuario"
+          placeholder="Nombre"
+          required
+        />
 
-            <div class="error"></div>
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="fas fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+      <div>
+        <label for="apellidoDeUsuario">Apellido</label>
+        <i class="fas fa-circle-user"></i>
+        <input
+          type="text"
+          name="apellido"
+          id="Apellido-de-Usuario"
+          placeholder="Apellido"
+          required
+        />
+
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="fas fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+      <div>
+        <label for="correoElectronico">Email</label>
+        <i class="fas fa-envelope"></i>
+        <input
+          type="email"
+          name="email"
+          id="correo-electronico"
+          placeholder="usuario@recetas.com"
+          required
+        />
+
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="fas fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+      <div>
+        <label for="password">Contraseña</label>
+        <i class="fas fa-unlock"></i>
+        <input
+          type="password"
+          name="password"
+          id="contrasena"
+          placeholder="********"
+          required
+        />
+
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="fas fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+      <button id="btn" type="submit">Enviar</button>
+
+      <div class="social">
+        <div class="titulo">Suscríbete y recibe las novedades</div>
+        <div class="pregunta">
+          ¿Ya estás registrado? <br />
+          <span>Ingresar</span>
         </div>
-        <div>
-            <label for="correoElectronico"> Email </label>
-            <i class="far fa-envelope"></i>
-            <input type="email" name="email" id="correo-electronico" placeholder="pedro@perez.com">
-
-            <i class="fas fa-exclamation-circle failure-icon"></i>
-            <i class="far fa-check-circle success-icon"></i>
-
-            <div class="error"></div>
-
+        <div class="btn"></div>
+        <div class="btn-1">
+          <img
+            src="https://img.icons8.com/color/30/000000/google-logo.png"
+            alt="Google"
+          />
+          Regístrate
         </div>
-        <div>
-            <label for="password">Sugerencias y Comentarios</label>
-            <i class="fas fa-comment"></i>
-
-            <input type="password" name="password" id="contrasena" placeholder="Hola Recetario" />
-
-            <i class="fas fa-exclamation-circle failure-icon"></i>
-            <i class="far fa-check-circle success-icon"></i>
-
-            <div class="error"></div>
-
-        </div>
-        <button id="btn" type="submit"> Enviar</button>
-
-        <div class="social">
-
-            <div class="titulo">Suscribete y recibe las novedades</div>
-
-            <div class="pregunta">
-                Ya estás registrado? <br />
-                <span>Ingresar</span>
-            </div>
-
-            <div class="btn"></div>
-            <div class="btn-1">
-                <img src="https://img.icons8.com/color/30/000000/google-logo.png" />
-                Registrate
-            </div>
-
-    </section>
-    <footer>
-
-            
-        </div>
+      </div>
     </form>
-
-    </div>
- <script src="js/sugerencias.js"></script>
-</body>
-
+    <script src="js/sugerencias.js"></script>
+  </body>
 </html>
