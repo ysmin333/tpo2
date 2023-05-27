@@ -1,37 +1,124 @@
 * {
-    background-color:#95BF74;
-    
-}
-h1 {
-    background-color: #556F44;
-    border: 2px solid  #556F44;;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #95bf74;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #556f44;
+  }
+  
+  .topnav a {
+    font-size: 16px;
+    padding: 10px 12px;
+    color: white;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #283f3b;
+    color: white;
+  }
+  
+  h1 {
+    background-color: #556f44;
+    border: 2px solid #556f44;
     border-radius: 5px;
     padding: 10px;
     color: white;
     text-align: center;
-    font-size: 8vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-
-}
-div {
+    font-size: 3rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  div {
+    font-size: 1.2rem;
     color: white;
-    font-size: large;
-}
-p {
-    background-color:  white;
-    color: #556F44;
-}
-.veggie {
-    width: 500px;
-    height: 300px;
-    float: right;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-
-}
-iframe {
-    padding: 5%;
-    float: right;
-}
+  }
+  
+  p {
+    padding: 10px;
+    color: white;
+  }
+  
+  .carnes {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .instruccion {
+    background-color: white;
+    color: #556f44;
+    padding: 15px;
+    padding-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px grey;
+    max-width: 80%;
+    margin: 0 auto;
+    list-style-type: decimal;
+  }
+  
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .topnav a {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 4rem;
+    }
+  
+    div {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      padding: 20px;
+    }
+  
+    .carnes {
+      max-width: 500px;
+    }
+  
+    iframe {
+      max-width: 560px;
+      height: 315px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .topnav a {
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 5rem;
+    }
+  
+    div {
+      font-size: 1.6rem;
+    }
+  
+    p {
+      padding: 30px;
+    }
+  }
